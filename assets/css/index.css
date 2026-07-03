@@ -1,0 +1,18 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selected-city {
+  width: 100%;
+  background-image: url("../images/bg-today-small.svg");
+
+  /* Vycentruje obrázok horizontálne aj vertikálne */
+  background-position: center;
+
+  /* Zabezpečí, že sa nebude opakovať (kachličkovať) */
+  background-repeat: no-repeat;
+
+  /* Prispôsobí veľkosť (vysvetlenie nižšie) */
+  /* background-size: cover; */
+}

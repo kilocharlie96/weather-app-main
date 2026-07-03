@@ -1,66 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Weather app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/index.css" />
 
-  Units
+    <title>Frontend Mentor | Weather app</title>
+  </head>
+  <body>
+    <header>
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <div class="logo">Logo</div>
+        <div class="units">Units</div>
+      </nav>
+      <ul>
+        <li>
+          Switch to Imperial/Metric Temperature Celsius (°C) Fahrenheit (°F)
+          Wind Speed km/h mph Precipitation Millimeters (mm) Inches (in)
+        </li>
+      </ul>
 
-  Switch to Imperial/Metric
+      <h1>How's the sky looking today?</h1>
+      <form>
+        <input type="text" placeholder="Search for a place..." />
+        <button type="submit">Search</button>
+      </form>
+    </header>
 
-  Temperature
+    <main>
+      <article class="selected-city">
+        <h2>Berlin, Germany</h2>
+        <h3>
+          <time datetime="#">15.5.1996</time>
+        </h3>
 
-  Celsius (°C)
-  Fahrenheit (°F)
+        <figure>
+          <img src="./assets/images/icon-sunny.webp" alt="" />
+        </figure>
+        <p>20</p>
+      </article>
+    </main>
 
-  Wind Speed
+    Feels like
+    <!-- Insert temperature here -->
 
-  km/h
-  mph
+    Humidity
+    <!-- Insert humidity here -->
 
-  Precipitation
+    Wind
+    <!-- Insert wind here -->
 
-  Millimeters (mm)
-  Inches (in)
+    Precipitation
+    <!-- Insert precipitation here -->
 
-  How's the sky looking today?
+    Daily forecast
+    <!-- Insert daily forecast for the next 7 days here -->
 
-  Search for a city, e.g., New York
-  Search
+    Hourly forecast
+    <!-- Insert hourly forecast for the selected day here -->
 
-  Feels like
-  <!-- Insert temperature here -->
-
-  Humidity
-  <!-- Insert humidity here -->
-
-  Wind
-  <!-- Insert wind here -->   
-  
-  Precipitation
-  <!-- Insert precipitation here -->
-
-  Daily forecast
-  <!-- Insert daily forecast for the next 7 days here -->
-
-  Hourly forecast
-  <!-- Insert hourly forecast for the selected day here -->
-
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by
+      <a
+        href="https://github.com/kilocharlie96/"
+        rel="noopener noreferrer"
+        target="_blank"
+        >kilocharlie96</a
+      >.
+    </footer>
+  </body>
 </html>
